@@ -5,6 +5,20 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve:`gatsby-source-firestore`,
+      credential: require("./firebaseKey.json"),
+      types:[
+        {
+          type:'Silla',
+          collection:'sillas',
+          map: doc => ({
+            category: doc.category,
+            prevViewImg: doc.prevViewImg
+          })
+        }
+      ]
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
