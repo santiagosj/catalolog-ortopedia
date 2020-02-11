@@ -11,14 +11,14 @@ module.exports = {
       options:{
         credential: require("./firebaseKey.json"),
         appConfig:{
-          apiKey: "AIzaSyDPe5tBNouNX9vJK6md6neWPHtmKs0Upps",
-          authDomain: "catalogo-b917e.firebaseapp.com",
-          databaseURL: "https://catalogo-b917e.firebaseio.com",
-          projectId: "catalogo-b917e",
-          storageBucket: "catalogo-b917e.appspot.com",
-          messagingSenderId: "758974939957",
-          appId: "1:758974939957:web:e1b337c770f5b27aeec27c",
-          measurementId: "G-MT16JJ6FN4"
+          apiKey: "",
+          authDomain: "",
+          databaseURL: "",
+          projectId: "",
+          storageBucket: "",
+          messagingSenderId: "",
+          appId: "",
+          measurementId: ""
         },
         types:[
           {
