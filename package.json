@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "firebase": "^7.7.0",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
@@ -14,9 +15,11 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-firestore": "^1.0.3",
     "gatsby-transformer-sharp": "^2.3.7",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-feather": "^2.0.3",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {

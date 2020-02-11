@@ -5,19 +5,65 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    
     {
       resolve:`gatsby-source-firestore`,
-      credential: require("./firebaseKey.json"),
-      types:[
-        {
-          type:'Silla',
-          collection:'sillas',
-          map: doc => ({
-            category: doc.category,
-            prevViewImg: doc.prevViewImg
-          })
-        }
-      ]
+      options:{
+        credential: require("./firebaseKey.json"),
+        appConfig:{
+          apiKey: "AIzaSyDPe5tBNouNX9vJK6md6neWPHtmKs0Upps",
+          authDomain: "catalogo-b917e.firebaseapp.com",
+          databaseURL: "https://catalogo-b917e.firebaseio.com",
+          projectId: "catalogo-b917e",
+          storageBucket: "catalogo-b917e.appspot.com",
+          messagingSenderId: "758974939957",
+          appId: "1:758974939957:web:e1b337c770f5b27aeec27c",
+          measurementId: "G-MT16JJ6FN4"
+        },
+        types:[
+          {
+            type:'productsPreView',
+            collection:'productosPreView',
+            map: doc => ({
+              categories: doc.categories,
+              productPreViewImg:doc.productPreViewImg,
+              slug:doc.slug
+            })
+          },
+          {
+            type:'products',
+            collection:'products',
+            map: doc => ({
+              categories: doc.categories,
+              description:doc.description,
+              productImgs:doc.productImgs,
+              slug:doc.slug,
+              model:doc.model,
+              previewImg:doc.previewImg,
+              category:doc.category
+            })
+          },
+          {
+            type:'sillas',
+            collection:'sillas',
+            map: doc => ({
+              categories: doc.categories,
+              productPreViewImg: doc.productPreViewImg,
+              slug:doc.slug
+            })
+          },
+          {
+            type:'breedHelpers',
+            collection:'nebulizadores_oximetros',
+            map: doc => ({
+              model:doc.model,
+              description:doc.description,
+              productImgs:doc.productImgs,
+              slug:doc.slug
+            })
+          }
+        ]
+      }
     },
     `gatsby-plugin-react-helmet`,
     {

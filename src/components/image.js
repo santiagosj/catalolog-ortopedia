@@ -1,32 +1,48 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React,{Fragment} from 'react'
+import PropTypes from 'prop-types'
+import './Image.css'
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
- */
+const Image = ({
+   background,
+   backgroundSize='cover',
+   className = '',
+   imgSrc,
+   onClick,
+   title='',
+   alt=''
+}) => {
+  let style = {}
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
+  if(background){
+    style = {
+      backgroundImage: `url(${imgSrc})`,
+      backgroundSize
     }
-  `)
+  }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return(
+    <Fragment>
+         {background && (
+           <div className={`BackgroundImage absolute ${className}`} style={style} />
+           
+         )}
+         {!background && (
+           <img
+              className={`${className}`}
+              src={imgSrc}
+              sizes={'100vw'}
+              onClick={onClick}
+              title={title}
+              alt={alt}
+           />
+         )}
+    </Fragment>
+  )
+
+}
+
+Image.propTypes = {
+  alt: PropTypes.string.isRequired
 }
 
 export default Image

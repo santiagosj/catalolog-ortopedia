@@ -1,0 +1,86 @@
+nebulizador omron NE-C801 -
+nebulizador omron NE-C802 -
+nebulizador silfab sf 2010 - 
+nebulizador silfab ultrasonico potenza -
+nebulizador silfab a piston repirar n 29 -
+nebulizador silfab a piston pixel - 
+nebulizador silfab super mini rossmax -
+vaporizador silfab v11 -
+nebulizaodor dysem ultrasonico nus 21 -
+Oximetro de pulso melipal adulto -
+Oximetro de pulso melipal pediatrico -
+Oximetro de pulso Coronet colores -
+Oximetro de Pulso Silfab adulto -
+Oximetro de pulso Silfab pediatrico -
+Estetoscopio Doble Campana Coronet Colores 
+Estetoscopio Litman
+Tensiometro Anaeroide Coronet colores 
+Tensiometro Anaeroide 
+Tesiometro Digital Omron
+Tensiometro Digital Citizen
+Tensiometro Digital Microlife
+Tesiometro Digital de Muñeca Omron
+Tesiometro Digital de Muñeca Microlife 
+Tesiometro Digital de Muñeca Citizen
+Muletas de Alumino CareQuip 
+Muletas de Aluminio Silfab colores 
+Bastón Canadiense Silfab colores
+Bastón de Alumino Plegable CareQuip
+Baston Tripode De aluminio 
+Bastón Tripode Caño 
+Baston 4 patas caño
+Andador Alumino 
+Cinta Neuromuscular (taping) PTM colores
+Cinta Neuromuscular (taping) Spidetech colores
+Venda tipo Coban colores
+Venda Elastica
+Venda Semieslastica
+Venda de yeso 
+Venda de yeso plástico 
+Rodillera Neoprene Profit
+Rodillera Neoprene  
+Rodillera Elastica de Algodon Titan
+Muñequera Neoprene Profit
+Muñequera Elastica de Algodón  Titan
+Tobillera Neoprene Profit
+Tobillera Elastica de Algodón Titan 
+Sillas de ruedas de CareQuip (todos los modelos) en especial las motorizadas
+Asientos Sanitarios CareQuip
+Asientos Sanitarios Masuar
+Grua levanta pacientes CareQuip 
+Casi todos los productos de CareQuip 
+Bolsas de colostomia y productos  Coloplast
+Parches Hidrocoloides Holister
+Hojas De bisturí e Instrumental de Acero inoxidable 
+Variedad en Andadores de Aluminio CareQuip, Masuar
+Pedaleras para ejercicio
+
+producto = {
+  id
+  nombre
+  modelo
+  marca
+  extracto
+  descripcion
+  imagen
+  categorias:[]
+}
+
+
+categorias = [
+  Nebulizadores,
+  Voporizadores,
+  Oxímetros,
+  Estetoscopios,
+  Tensiometros,
+  Muletas,
+  Bastones,
+  Andadores,
+  Sillas,
+  Cintas,
+  Ortopedia, fisioterapia,
+  Insumos Hospitalarios,
+  Insumos Medicos
+]
+
+

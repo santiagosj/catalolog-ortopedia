@@ -1,0 +1,40 @@
+.ProductCard {
+    text-decoration: none;
+    background: white;
+    color: inherit;
+    border: 1px solid var(--lightGrey);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .ProductCard:hover,
+  .ProductCard:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ProductCard--Image {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProductCard--Model {
+    margin: 0;
+  }
+  
+  .ProductCard--Content {
+    padding: 0 2.5rem 2.5rem;
+  }
+  
+  .ProductCard--Category {
+    text-align: center;
+    font-size: 1.2rem;
+    min-height: 1.2em;
+    line-height: 1;
+    margin: 0.5em 0;
+  }
+  
